@@ -1,0 +1,130 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+
+# General
+.DS_Store
+Thumbs.db
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs/
+*.log
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+jspm_packages/
+bower_components/
+
+# Testing
+coverage/
+
+# Production
+build/
+dist/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Next.js
+.next/
+out/
+
+# Nuxt.js
+.nuxt/
+
+# Svelte
+__sapper__/
+.svelte-kit/
+
+# C# / .NET
+*.dll
+*.pdb
+*.nuget
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Visual Studio
+.vs/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+#*.sln
+*.iml
+*.iws
+
+# gRPC
+**/obj/
+**/bin/
+
+# Configuration files
+#appsettings.json
+
+# Ignore .env files containing sensitive information
+*.env.development
+*.env.production
+
+# Ignore docker-compose override files
+docker-compose.override.yml
+
+# Ignore Docker related files and directories
+/.docker
+/docker.sock
+
+/db-data/
+
+# Ignore local Docker Compose configuration
+docker-compose.override.yml
+
+# Ignore Dockerfile specific files
+.dockerignore
+
+# Visual Studio Code
+.vscode/
+
+# React Native
+ios/Pods/
+*.xcworkspace/
+
+# Parcel-bundler
+.cache/
+.parcel-cache/
+
+# Storybook
+storybook-static/
+
+# WebAssembly
+*.wasm
+
+# JavaScript / TypeScript
+*.tsbuildinfo
+.eslintcache
+
+# Other files and directories
+*.swp
+*~
+__pycache__/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
