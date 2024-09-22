@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Domain;
 using Persistence.Configurations;
+using Domain.Users;
 
 namespace Persistence.Data
 {

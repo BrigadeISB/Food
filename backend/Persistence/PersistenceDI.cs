@@ -1,11 +1,13 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Domain.Users;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Persistence.Data;
+using Persistence.Repositories;
 
 namespace Persistence
 {
-    public static class DIPersistence
+    public static class PersistenceDI
     {
         public static IServiceCollection AddPersistenceServices(this IServiceCollection services, IConfiguration config)
         {
@@ -19,6 +21,8 @@ namespace Persistence
             {
                 options.UseNpgsql(connectionString);
             });
+
+            services.AddScoped<IUserRepository, UserRepository>();
             return services;
         }
     }
