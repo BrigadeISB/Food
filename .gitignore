@@ -80,8 +80,8 @@ artifacts/
 #appsettings.json
 
 # Ignore .env files containing sensitive information
-*.env.development
-*.env.production
+#*.env.development
+#*.env.production
 
 # Ignore docker-compose override files
 docker-compose.override.yml
@@ -119,12 +119,3 @@ storybook-static/
 *.tsbuildinfo
 .eslintcache
 
-# Other files and directories
-*.swp
-*~
-__pycache__/
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/

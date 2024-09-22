@@ -1,16 +1,25 @@
+using API.Extensions;
+using DotNetEnv;
+using Persistence;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+Env.Load("../../.env");
 
 builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
 
+//swag
+builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddPersistenceServices(builder.Configuration);
 
 var app = builder.Build();
 
+app.UseMigration();
+
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment())//swag
 {
     app.UseSwagger();
     app.UseSwaggerUI();
@@ -18,7 +27,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
+//app.UseAuthorization();
 
 app.MapControllers();
 
